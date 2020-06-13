@@ -1,0 +1,224 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Coronavirus Self Declaration Form
+    </ion-title>
+    <ion-button slot="end" mode="ios">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="form-review no-bounce">
+    <div class="form-review-overlay">
+      <div class="overlay-wrapper">
+        <img src="../../assets/icon/ribbon-left.svg">
+        <label class="review-text"><span class="text-span">FORM REVIEW</span></label>
+        <img src="../../assets/icon/ribbon-right.svg">
+      </div>
+    </div>
+    
+    <div class="self-form-content">
+      <ion-grid class="self-form-content-header">
+        <ion-row>
+          <ion-col size="2">
+            <img src="../../assets/undraw.png">
+          </ion-col>
+          <ion-col>
+            <h2>
+              Coronavirus Self Declaration Form
+            </h2>
+            <p>
+              For the health and safety of our community, declaration of illness is required. Be sure that 
+              the information you'll give is accurate and complete. Please get immediate medical attention 
+              if you have any of the COVID-19 signs.
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+      <form>
+        <div class="form-wrapper">
+          <div class="form-label">
+            <ion-label>Name</ion-label>
+          </div>
+          <ion-row class="label-content">
+            <ion-col class="first-name-wrapper">
+              <ion-input></ion-input>
+              <h3 class="name-heading">First Name</h3>
+            </ion-col>
+            <ion-col class="last-name-wrapper">
+              <ion-input class="self-form-content-form-input"></ion-input>
+              <h3 class="name-heading">Last Name</h3>
+            </ion-col>
+          </ion-row>
+      
+          <div class="form-label">
+            <ion-label>ID Number</ion-label>
+          </div>
+          <ion-row class="label-content">
+            <ion-input></ion-input>
+          </ion-row>
+          
+          <div class="form-label">
+            <ion-label>Department</ion-label>
+          </div>
+          <ion-row class="label-content">
+            <ion-input></ion-input>
+          </ion-row>
+      
+          <div class="form-label border-line">
+            <ion-label>Have you travelled abroad during 2020?</ion-label>
+          </div>
+          <ion-row class="label-content">
+            <ion-radio-group value="Yes">
+              <ion-item lines="none" class="is-travelled">
+                <ion-label>Yes</ion-label>
+                <ion-radio slot="start" mode="md" color="tertiary" value="Yes"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="is-travelled">
+                <ion-label>No</ion-label>
+                <ion-radio slot="start" mode="md" color="tertiary" value="No"></ion-radio>
+              </ion-item>
+            </ion-radio-group>  
+          </ion-row>
+      
+          <div class="form-label">
+            <ion-label>Name of the area(s) visited</ion-label>
+          </div>
+          <div class="label-content">
+            <ion-textarea rows="8" class="area-visited"></ion-textarea>
+            <p class="area-visited-format">Country, State, City</p>
+          </div>
+      
+          <div class="form-label">
+            <ion-label>Dates of travel</ion-label>
+          </div>
+          <div class="label-content">
+            <ion-textarea rows="8" class="area-visited"></ion-textarea>
+            <p class="area-visited-format">Arrival and return dates for each area</p>
+          </div>
+      
+          <div class="form-label">
+            <ion-label>Have you been in contact with people being infected, suspected or diagnosed with COVID-19?</ion-label>
+          </div>
+          <div class="label-content">
+            <ion-radio-group value="Yes">
+              <ion-item lines="none" class="is-travelled">
+                <ion-label>Yes</ion-label>
+                <ion-radio slot="start" color="tertiary" value="Yes"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="is-travelled">
+                <ion-label>No</ion-label>
+                <ion-radio slot="start" color="tertiary" value="No"></ion-radio>
+              </ion-item>
+            </ion-radio-group>  
+          </div>
+      
+          <div class="form-label">
+            <ion-label>Your relationship with the people and your last contact date with them</ion-label>
+          </div>
+          <div class="label-content">
+            <ion-textarea rows="8" class="area-visited"></ion-textarea>
+          </div>  
+      
+          <div class="form-label">
+            <ion-label>Please state whether you've experienced/are experiencing the following</ion-label>
+            <div class="label-content"> 
+              <table class="form-table">
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td class=" table-td table-header header-color">Yes</td>
+                    <td class=" table-td header-color">No</td>
+                  </tr>
+                  <tr>
+                    <td class="table-th header-color">Fever</td>
+                    <td class=" table-td">    
+                      <input type="radio" class="table-radio">  
+                    </td>
+                    <td class=" table-td">         
+                      <input type="radio" class="table-radio">  
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-th  header-color">Cough</td>
+                    <td class=" table-td">
+                      <input type="radio" class="table-radio">  
+                    </td>
+                    <td class="table-td ">
+                      <input type="radio" class="table-radio">  
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-th header-color">Shortness of Breath</td>
+                    <td class=" table-td">
+                      <input type="radio" class="table-radio">  
+                    </td>
+                    <td class=" table-td">
+                      <input type="radio" class="table-radio">  
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-th  header-color"> Persistent Pain in the Chest</td>
+                    <td class=" table-td">
+                      <input type="radio" class="table-radio">   
+                    </td><td class="table-td">
+                      <input type="radio" class="table-radio">  
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      
+          <div class="form-label">
+            <ion-label>Can you work from home?</ion-label>
+          </div>
+      
+          <div class="label-content">
+            <ion-radio-group value="Yes">
+              <ion-item lines="none" class="is-travelled">
+                <ion-label>Yes</ion-label>
+                <ion-radio slot="start" color="tertiary" value="Yes"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="is-travelled">
+                <ion-label>No</ion-label>
+                <ion-radio slot="start" color="tertiary" value="No"></ion-radio>
+              </ion-item>
+            </ion-radio-group>  
+          </div>
+          
+          <div class="form-acknowledge">
+            <ion-label>I acknowledge that the information I've given is accurate and complete.</ion-label>
+          </div>
+      
+          <div class="form-label">
+            <ion-label>Date</ion-label>
+          </div>
+          <mat-form-field appearance="outline" class="example-full-width">
+            <input matInput [matDatepicker]="picker" placeholder="MM/DD/YYYY">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker [dateClass]="dateClass" #picker></mat-datepicker>
+          </mat-form-field>
+          <p class="date-hint">Date</p>
+      
+          <div class="form-label">
+            <ion-label>Signature</ion-label>
+          </div>
+          <div class="signature-pad-container">
+            <div class="signature-pad-wrapper">
+              <signature-pad (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()" [options]="signaturePadOptions"></signature-pad>
+            </div>
+            <div class="sign-canel-wrap"><button class="sign-cancel-btn" type="button" (onEndEvent)="clear()">clear</button>
+            </div>
+          </div>
+        </div>
+        <div class="form-submit-wrapper">
+          <ion-button class="form-submit">Submit</ion-button>
+        </div>
+      </form>
+    </div>
+
+
+</ion-content>
